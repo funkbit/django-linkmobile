@@ -10,6 +10,7 @@ class AckMessage(models.Model):
     
     batchid = models.CharField(_('BatchID'), max_length=100, blank=True)
     msisdn = models.CharField(_('Msisdn'), max_length=100, blank=True)
+    price = models.CharField(_('Price'), max_length=100, blank=True)
     operator = models.CharField(_('Operator'), max_length=100, blank=True)
     messageid = models.CharField(_('MessageID'), max_length=100, blank=True)
     parts = models.CharField(_('Parts'), max_length=100, blank=True)

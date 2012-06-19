@@ -24,6 +24,7 @@ def callback(request):
         ack = AckMessage()
         ack.batchid = request.GET.get('BatchID', '')
         ack.msisdn = request.GET.get('Msisdn', '')
+        ack.price = request.GET.get('Price', '')
         ack.operator = request.GET.get('Operator', '')
         ack.messageid = request.GET.get('MessageID', '')
         ack.parts = request.GET.get('Parts', '')
@@ -35,6 +36,6 @@ def callback(request):
             'batchid': request.GET.get('BatchID', ''),
             'msgid': request.GET.get('MessageID', '')
         })
-        return HttpResponse('NOK')
+        return HttpResponse('NOK', content_type='text/plain')
     
-    return HttpResponse('OK')
+    return HttpResponse('OK', content_type='text/plain')
