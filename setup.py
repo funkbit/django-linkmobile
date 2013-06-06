@@ -16,12 +16,12 @@ setup(
     version=__version__,
     description='Django application for receiving and saving callbacks from the Link Mobile MessageService API',
     long_description=open('README.md').read(),
-    author='Funkbit AS',
+    author='Funkbit',
     author_email='post@funkbit.no',
     url='https://github.com/funkbit/django-linkmobile',
-    packages=['djlinkmobile',],
+    packages=['djlinkmobile'],
     license='BSD',
-    classifiers = (
+    classifiers=(
         "Development Status :: 3 - Alpha",
         "Framework :: Django",
         "Intended Audience :: Developers",
